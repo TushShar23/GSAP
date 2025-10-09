@@ -1,6 +1,6 @@
 ## Lec-1
 
-### / Basic
+### / Box animation
 
 ```
 
