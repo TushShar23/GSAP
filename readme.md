@@ -9,4 +9,7 @@ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js
 
 ### Lec-1
 
+```
 / Box animation
+/ Text animation
+```
