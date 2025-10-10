@@ -50,3 +50,16 @@ properties.....
 
 **** NOTE ***** : YOYO property doesn't work without repeat property.
 ```
+
+### / Timeline and animations
+
+```
+> A TIMELINE in GSAP is like a container that holds multiple tweens (animations) and lets you control them together (In simple words it is just a controller which controls multiple tweens)
+> When you define TIMELINE it is synchronous in nature.
+> But the execution executes asynchronously
+> GSAP AUTOMATICALLY runs the animation by default no need to call play() explicitly.
+> GSAP calculates start and end times for each tween and manages them automatically.
+
+const tl = gsap.timeline()
+// timeline() is a function in GSAP and returns an instance of timeline and that instance has its own set of functions like play(),pause(),add(),reverse(),to(),from().....
+```
