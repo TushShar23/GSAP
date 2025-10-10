@@ -62,4 +62,6 @@ properties.....
 
 const tl = gsap.timeline()
 // timeline() is a function in GSAP and returns an instance of timeline and that instance has its own set of functions like play(),pause(),add(),reverse(),to(),from().....
+
+**** NOTE **** - TIMELINE and TWEEN are the core concepts of GSAP.
 ```
