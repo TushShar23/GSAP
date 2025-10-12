@@ -21,4 +21,3 @@ gsap.from("#page2 #box",{
     }
 })
 
-// when we use pin we trigger the parent.matlab jaise woh animation hoti hai na ki hum pura scroll karne pe hi next page pe jaa paate hai tabtak same page hi pin rehta hai hmaare view pe.aur isme starting point top 0% hota hai.User ko same pe rokte hai aur parent pe trigger hoti hai pin.Hume parent ko pin karke rakhna hai till the point jab tak animation ho rahi hai scrolling basis pe.end hum kisi bhi limit pe kar sakte -100% 150% ...
