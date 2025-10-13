@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 96, 123);
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(37, 50, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 h1{
+    font-size: 40vw;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
