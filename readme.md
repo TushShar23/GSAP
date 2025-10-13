@@ -14,3 +14,12 @@ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js
 / Text animation
 / Timeline and animations
 ```
+
+### Lec-2(ScrollTrigger)
+
+```
+/ Basic Box animation 
+/ ScrollTrigger text animation
+/ Advance ScrollTrigger
+/ Animation assignment
+```

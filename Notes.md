@@ -108,3 +108,42 @@ But sometimes, your page (or a section of it) scrolls inside a container (like a
 
 
 ```
+
+### / ScrollTrigger text animation
+
+```
+In this i used scrolltrigger for making text animations. 
+```
+
+### / Advance ScrollTrigger
+
+```
+Here we have two new scrollTrigger properties which are very very important for making eye catchy animations.
+
+> scrub : scrub property is used for controlling the animation by scrolling.The scrolling of user tells how much animation should be perform.(sync animation with scroll ).We can give scrub in numbers from 1 to 5, and we can also use (true/false) but recommended use numbers.
+
+> pin : As the name suggests it pins the element.It fix the element on the page.Keep it fixed while scrolling.
+
+```
+
+### / Animation assignment
+
+```
+Here i have made a very cool text animation using scrollTrigger and its properties.
+
+Few points to remember:
+> We use pin property when we need to trigger the parent element.It fix the parent element on the screen till the animation ends.
+> Start "top 0%" is nothing but saying that when page 2 reaches 0% from top then start the animation and ends the animation when page2 is -180 from the top.Why page2 coz it is the parent where we have applied the animation.
+
+ex - gsap.to("#page2 h1",{
+    transform:"translateX(-170%)",
+    scrollTrigger:{
+        trigger:"#page2",
+        scroller:"body",
+        start:"top 0%",
+        end:"top -180%",
+        scrub:2,
+        pin:true // pin will stop/pin the parent where we have applied animation.
+    }
+})
+```
