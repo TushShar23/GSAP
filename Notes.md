@@ -64,4 +64,47 @@ const tl = gsap.timeline()
 // timeline() is a function in GSAP and returns an instance of timeline and that instance has its own set of functions like play(),pause(),add(),reverse(),to(),from().....
 
 **** NOTE **** - TIMELINE and TWEEN are the core concepts of GSAP.
+
+```
+
+## Lec-2
+
+### / Basic Box animation
+
+```
+What is plugin ?
+A plugin is an extension that adds extra features on top of an existing framework or library
+
+> ScrollTrigger is an extension of GSAP which is used for SCROLL-BASED ANIMATIONS.
+> For using ScrollTrigger in your code you need to first include its cdn:
+https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer
+
+*NOTE - Order of scripts should be first is GSAP cdn -> ScrollTrigger cdn -> your local script.js
+
+> You can define or use scrollTrigger like this :
+i) gsap.to/from("selector",{
+   scrollTrigger:"selector > child > child..."
+})
+	OR 
+ii) gsap.to/from("selector",{
+   duration:1,
+   scrollTrigger:{
+	trigger:"",
+	scroller:"",
+	start:"",
+	end:"",
+}
+})
+
+> trigger : defines which element will trigger the scrollTrigger.
+> scroller : defines which element is actually being scrolled.
+By default,ScrollTrigger listens to the window for scroll events.
+But sometimes, your page (or a section of it) scrolls inside a container (like a div) — not the whole window.Thats where scroller comes in.
+> start : defines when(at what scroll position) animation should start.
+> end : defines when(at what scroll position) animation should end.
+> markers : (true/false) - shows visual markers(start and end markers for the animation) for help.
+
+** Its a CSS property-(whitespace-nowrap):This will put your text into one line.(specifies how whitespace is handled in an element)
+
+
 ```
