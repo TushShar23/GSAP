@@ -147,3 +147,47 @@ ex - gsap.to("#page2 h1",{
     }
 })
 ```
+
+### / Lec-3(SVG animation using GSAP)
+
+```
+# Search path curve on google and then go to mdn docs.
+
+> SVG stands for scalable vector graphics.Scalable Vector Graphics (SVG) is an XML-based markup language for describing two-dimensional based vector graphics.
+
+# You have to learn about its path properties and type of curves.
+
+> path :The <path> element is the most powerful element in the SVG library of basic shapes. It can be used to create lines, curves, arcs, and more.Paths create complex shapes by combining multiple straight lines or curved lines.
+> There are an infinite number of Bézier curves, but only two are available in <path> elements: a cubic one, called with C, and a quadratic one, called with Q.
+> We mostly use quadratic curve.
+
+<svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 10 80 Q 95 10 180 80" stroke="black" fill="transparent" />
+</svg>
+
+> <svg></svg> is just a container which holds the main thing i.e. path which defines the main curve/line or any figure.
+
+Here , M = moving to (x,y), Q = quadratic curve -> (x,y) = controlling points/coordinates (x,y), then (x,y) = end coordinates
+
+> The shape of a <path> element is defined by one parameter: d.The d attribute contains a series of commands and parameters used by those commands.
+
+For instance, let's move to the x and y coordinates (10, 10). The "Move to" command is called with the letter M. When the parser runs into this letter, it knows it needs to move to a point. So, to move to (10, 10) the command to use would be M 10 10. After that, the parser begins reading for the next command.
+
+*** Coordinates in the d parameter are always unitless and hence in the user coordinate system ***
+
+ gsap.to("svg path",{
+        attr: { d: finalPath },
+        duration: 1.5,
+        ease:"elastic.out(1.8,0.2)"
+    })
+
+> we have applied gsap animation to the svg path element 
+
+NEW PROPERTY
+> attr : stands for attribute.This is used to change/modify the attribute of the element using gsap.
+
+-------------------------------------------------------------------------------------------------------
+We have made a stringy animation which is controlled by our mousemove event.
+> There we have used this "attr" property for the movement of the string along with the mousecursor.
+
+```

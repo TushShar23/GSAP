@@ -23,3 +23,9 @@ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js
 / Advance ScrollTrigger
 / Animation assignment
 ```
+
+### Lec-3(SVG animation using GSAP)
+
+```
+Made a stringy animation which is controlled by our mouse moving event using GSAP.
+```
