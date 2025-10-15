@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing property allows us to include the padding and border in an element's total width and height 
+    
+    If you set box-sizing: border-box; on an element, the padding and border are included in the calculation of the width and height
+
+    By default, the width and height of an element is calculated like this:
+
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+
+    This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height)
+    */
+    font-family: poppins;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#cursor{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    /* MOST IMP PROPERTY YOU NEED TO SPECIFY WHEN MAKING THESE KIND OF CUSTOM CURSOR */
+    position: fixed; 
+    /* if we specify absolute then we our cursor can move only in page/div where it has been defined.
+    
+    fixed will fix it throughout the site.It can move anywhere on the site.
+    */
+}
+
