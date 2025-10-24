@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing property allows us to include the padding and border in an element's total width and height 
+    
+    If you set box-sizing: border-box; on an element, the padding and border are included in the calculation of the width and height
+
+    By default, the width and height of an element is calculated like this:
+
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+
+    This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height)
+    */
+    font-family: poppins;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    font-size: 7px;
+    text-align: center;
+    z-index: 9;
+}
+
+#imagediv{
+    width: 50vw;
+    height: 30vw;
+    position: relative;
+}
+
+#imagediv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+#overlay{
+    /* if we dont set the parent position relative then the child will go out of the parent */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    z-index: 10;
+}
+
+
+/* Itna taam jhaam overlay,postion absolute , img ye sab use isliye hua kyoki jab hum cursor wale div ko image div ke ander leke jaate hai tab humne mouseenter/mousemove event listen karna hai size bada hota hai cursor ka aur inner html bhi change hoti hai jo ye INNER HTML change hoti hai na uski wajah se size upar niche hota hai jitna ander jaane ke baad rehna chahiye utna nhi rehta isliye hume jitter effect dikh rhah*/
+
+/* 
+
+cursor enters image → hover event chala → scale up + text add
+↑
+text add hone se cursor thoda bada ho gaya → mouse technically image se bahar gaya
+→ leave event trigger ho gaya
+↑
+leave event → cursor small + text remove
+↑
+cursor chhota hua → mouse dobara image ke andar → enter event trigger
+↑
+repeat repeat repeat → flicker/jitter
+
+
+
+*/
