@@ -1,0 +1,77 @@
+*{
+ margin:0%;
+ padding:0%;
+ box-sizing:border-box;
+ /* font-family: poppins; */
+}
+
+html,body{
+ height:100%;
+ width:100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1603437873662-dc1f44901825?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.4rem;
+}
+#nav i{
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+#nav h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+#fullnav{
+    height: 100%;
+    width: 35%;
+    /* jitni width doge untna hi fir right se htaane ke time value deni padegi */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.512);
+    top: 0;
+    right: -35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8rem 2.7rem;
+    gap:0.7rem;
+    backdrop-filter: blur(10px);
+    /* The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent */
+    
+}
+
+#fullnav h4{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+#fullnav i{
+    position: absolute;
+    top:5%;
+    right:10%;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.3rem;
+    font-weight: bold;
+}
