@@ -1,0 +1,30 @@
+*{
+ margin:0%;
+ padding:0%;
+ box-sizing:border-box;
+ color: white;
+}
+
+html,body{
+ height:100%;
+ width:100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 120px;
+    /* background-color: rebeccapurple; */
+    overflow: hidden;
+    /*  overflow hidden is for just making the animation more smooth and classy.It just cut off the extra space */
+}
+
+h1 span{
+    display: inline-block;
+
+}
+/* you have give this to that span in which your text is written else your animation wont work */
