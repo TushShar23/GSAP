@@ -2,6 +2,7 @@
  margin:0%;
  padding:0%;
  box-sizing:border-box;
+ font-family: NeueMachina-Regular;
 }
 
 html,body{
@@ -21,8 +22,36 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding:1vw 2.4vw;
+    height: 60px;
+}
+nav h1{
+    font-size:2.1vw;
+    font-weight: bold;
 }
 .links{
     border: 2px solid gray;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    padding: 0.35vw 1vw;
+}
+
+
+.links h4{
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.links button{
+    padding: 0.4vw 0.7vw;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+
+nav h1 i{
+    /* <i> element is an inline element so for modifying it from its default position you need to convert it into and inline-block or block element.Thatswhy our rotate was not working without changing its display */
+    display: inline-block;
+    rotate: 45deg;
 }
