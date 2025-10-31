@@ -17,7 +17,7 @@ section{
 }
 
 nav{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +27,10 @@ nav{
 nav h1{
     font-size:2.1vw;
     font-weight: bold;
+    cursor: pointer;
 }
 .links{
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +42,7 @@ nav h1{
 .links h4{
     font-weight: 500;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .links button{
@@ -54,4 +56,5 @@ nav h1 i{
     /* <i> element is an inline element so for modifying it from its default position you need to convert it into and inline-block or block element.Thatswhy our rotate was not working without changing its display */
     display: inline-block;
     rotate: 45deg;
+    cursor: pointer;
 }
