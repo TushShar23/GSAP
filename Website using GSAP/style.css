@@ -25,7 +25,7 @@ nav{
     height: 60px;
 }
 nav h1{
-    font-size:2.1vw;
+    font-size:35px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -34,14 +34,14 @@ nav h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:3rem;
-    padding: 0.35vw 1vw;
+    gap:4rem;
+    padding: 0.4vw 1vw;
 }
 
 
 .links h4{
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 17.2px;
     cursor: pointer;
 }
 
