@@ -1,8 +1,9 @@
+
 *{
  margin:0%;
  padding:0%;
  box-sizing:border-box;
- font-family: NeueMachina-Regular;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,body{
@@ -25,7 +26,7 @@ nav{
     height: 60px;
 }
 nav h1{
-    font-size:35px;
+    font-size:32px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -45,6 +46,10 @@ nav h1{
     cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
+
 .links button{
     padding: 0.4vw 0.7vw;
     background-color: beige;
@@ -57,4 +62,72 @@ nav h1 i{
     display: inline-block;
     rotate: 45deg;
     cursor: pointer;
+    font-size: 35px;
 }
+
+/* center */
+#center{
+    /* background-color: red; */
+    height: 85%;
+    width: 100%;
+    display: flex;
+    padding: 2rem 3rem;
+}
+
+.center-part-1{
+    width: 40%;
+    height: 100%;
+    /* background-color: yellow; */
+    padding: 1rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    border: 2px solid gray;
+
+}
+.center-part-1 h1{
+   font-size: 68px;
+   font-family: machina;
+   line-height: 4.5rem;
+   font-weight: 500;
+   /* border: 2px solid gray; */
+   /* padding: 0.2rem 0.6rem; */
+   /* margin-left: 0.6rem; */
+
+}
+.center-part-1 p{
+    font-size: 18px;
+    /* border: 2px solid gray; */
+    width: 79%;
+    /* text-align: left; */
+}
+.center-part-1 button{
+    margin-left: 0.5rem;
+    height: 3.8vw;
+    width: 16vw;
+    border-radius: 1rem;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.13rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+.center-part-1 button:hover{
+    background-color: rgb(40, 36, 36);
+}
+
+
+
+
+
+
+.center-part-2{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(52, 18, 152);
+}
+
