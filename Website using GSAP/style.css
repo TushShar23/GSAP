@@ -77,6 +77,7 @@ nav h1 i{
     width: 100%;
     display: flex;
     padding: 2rem 3rem;
+    margin-top: 1.5rem;
 }
 
 .center-part-1{
@@ -88,7 +89,7 @@ nav h1 i{
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
 
 }
 .center-part-1 h1{
@@ -110,7 +111,7 @@ nav h1 i{
 .center-part-1 button{
     margin-top: 1rem;
     height: 55px;
-    width: 240px;
+    width: 230px;
     border-radius: 0.92rem;
     border: none;
     font-size: 17px;
@@ -126,21 +127,52 @@ nav h1 i{
     background-color: rgb(40, 36, 36);
 }
 
-
-
-
-
-
 .center-part-2{
-    border: 2px solid gray;
+    /* border: 2px solid gray;  */
     display: flex;
     justify-content: center;
-    width: 60%;
     height: 100%;
+    width: 60%;
+    /* position: relative; */
     /* background-color: rgb(52, 18, 152); */
 }
 .center-part-2 img{
     height:100%;
     width: 100%;
+}
+
+.section1-partners{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    /* gap: 10rem; */
+}
+.section1-partners img{
+    height: 36px;
+}
+/* section 2 */
+
+.page2 .services{
+    /* border: 2px solid gray; */
+    margin-top: 180px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.services h2{
+    font-size: 35px;
+    /* border: 2px solid gainsboro; */
+    padding: 0px 10px;
+    background-color: #B9FF66;
+    border-radius: 8px;
+    text-align: center;
+}
+.services p{
+    font-size: 17px;
+    width: 40%;
 }
 
