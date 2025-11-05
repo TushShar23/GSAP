@@ -18,11 +18,12 @@ section{
 }
 
 nav{
+    margin-top: 1rem;
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1vw 2.4vw;
+    padding:1vw 5vw;
     height: 60px;
 }
 nav h1{
@@ -181,8 +182,8 @@ nav h1 i{
 
 #container{
     margin-top: 1.8rem;
-    padding:1rem 1rem;
-    border: 2px solid gray;
+    padding:1rem 5rem;
+    /* border: 2px solid gray; */
     height: 85%;
     width: 100%;
     display: flex;
@@ -192,10 +193,10 @@ nav h1 i{
 }
 
 .elem{
-    /* flex-shrink: 0; */
-    height: 270px;
-    width: 40%;
-    background-color: rgb(255, 255, 255);
+    flex-shrink: 0;
+    height: 280px;
+    width: 45%;
+    /* background-color: rgb(255, 255, 255); */
     border: 2px solid gray;
     border-radius: 2rem;
     box-shadow: 0px 8px 2px black ;
@@ -205,7 +206,7 @@ nav h1 i{
 .left{
     padding: 1rem 2.5rem;
     width: 50%;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -213,13 +214,64 @@ nav h1 i{
     gap: 5rem;
 }
 .left h4{
-    width: 60%;
+    width: 78%;
+    border: 2px solid #dd7c7c;
+    padding: 0.3rem 0.3rem;
+    background-color: #B9FF66;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 2rem;
     
 }
 .btn{
     display: flex;
-    gap: 1rem;
+    gap: 1.4rem;
     justify-content: center;
     align-items: center;
 }
+.btn span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem 1rem;
+}
+.right img{
+    height: 60%;
+    /* width: 100%; */
+}
+.yellow{
+    background-color: #B9FF66;
+}
+.yellow h4{
+    background-color: white;
+    line-height: 2rem;
+    width: 70%;
+}
+.black{
+    background-color: black;
+}
+.black h4{
+    background-color: white;
+    width: 70%;
+    line-height: 2rem;
+}
+.black span{
+    color: white;
+}
+.grey{
+    background-color: #F3F3F3;
+}
+.grey h4{
+    width: 60%;
+    line-height: 2rem;
+}
+
+
 
