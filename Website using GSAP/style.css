@@ -214,7 +214,7 @@ nav h1 i{
     gap: 5rem;
 }
 .left h4{
-    width: 78%;
+    width:78%;
     border: 2px solid #dd7c7c;
     padding: 0.3rem 0.3rem;
     background-color: #B9FF66;
@@ -272,6 +272,8 @@ nav h1 i{
     width: 60%;
     line-height: 2rem;
 }
-
+.new h4{
+    width: 50%;
+}
 
 
