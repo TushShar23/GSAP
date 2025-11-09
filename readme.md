@@ -29,3 +29,24 @@ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js
 ```
 Made a stringy animation which is controlled by our mouse moving event using GSAP.
 ```
+
+### Project-1(custom cursor)
+
+```
+/ Basic Custom cursor
+/ Image custom cursor
+```
+
+### Project-2(Timeline animation with Gsap)
+
+```
+It was a sidebar made using GSAP.
+```
+
+### Project-3(Text animation)
+
+### Project-4(Scrolling text animation)
+
+```
+It is an animation which is triggered/performed according to our mouse wheel movement.
+```
